@@ -8,8 +8,20 @@ app.get('/',function(req,res){
 res.sendFile(__dirname+"/index.html");
 })
 app.post('/',function(req,res) {
+
+    //addition
+    var n1=Number(req.body.name1) 
+    var n2=Number(req.body.name2)
+
+    var resultA = n1 + n2 
+
+  
+
     console.log(req.body)
-    res.send("thanks for you")
+
+    res.send("the result is  "+ resultA)
+
+
 } )
 
 app.listen(3000,function(){
