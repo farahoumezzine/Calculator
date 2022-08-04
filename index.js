@@ -38,7 +38,7 @@ app.get('/bmicalculator', function(req,res){
     
       
     
-        //console.log(req.body);
+        console.log(req.body);
     
         res.send("YOUR BMI is  "+ resultBMI);
     
